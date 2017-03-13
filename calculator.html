@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        table{
+            width: 90%;
+            height: 400px;
+            font-size: 25px;
+            text-align: center;
+        }
+        td{
+            width: 30px;
+            height: 30px;
+            border: 2px solid darkgrey;
+        }
+        #display{
+            text-align: right;
+            padding-right: 45px;
+            font-size: 35px;
+
+        }
+        div{
+            width: 30%;
+            margin: auto;
+            margin-top: 5%;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border="3px solid black" cellspacing="15px" cellpadding="2px">
+            <tr style="border: 3px solid gainsboro">
+                <td id="display" colspan="5">0</td>
+            </tr>
+            <tr>
+                <td bgcolor="#d3d3d3" style="color: darkblue">7</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">8</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">9</td>
+                <td bgcolor="#696969" style="color: white">&divide;</td>
+                <td bgcolor="red" style="color: white">C</td>
+            </tr>
+            <tr>
+                <td bgcolor="#d3d3d3" style="color: darkblue">4</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">5</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">6</td>
+                <td bgcolor="#696969" style="color: white">&times;</td>
+                <td bgcolor="#696969" style="color: white">00&#8594;0;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#d3d3d3" style="color: darkblue">1</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">2</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">3</td>
+                <td bgcolor="#696969" style="color: white">&#x2212;</td>
+                <td rowspan="2" bgcolor="darkblue" style="color: white">&#61;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#696969" style="color: white">&#43;&#47;&#45;</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">0</td>
+                <td bgcolor="#d3d3d3" style="color: darkblue">.</td>
+                <td bgcolor="#696969" style="color: white">&#43;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        div{
+            width: 20%;
+            margin: auto;
+            margin-top: 5%;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border="1px" cellpadding="5px">
+            <caption>Questionnaire Results</caption>
+            <colgroup>
+                <col span="1" style="background-color:silver">
+            </colgroup>
+            <thead>
+                <tr style="background-color:silver">
+                    <th rowspan="2">Question</th>
+                    <th colspan="2">Women</th>
+                    <th colspan="2">Men</th>
+                </tr>
+                <tr style="background-color:silver">
+                    <th scope="colgroup">Yes</th>
+                    <th>No</th>
+                    <th>Yes</th>
+                    <th>No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">Question 1</th>
+                    <td>42%</td>
+                    <td>58%</td>
+                    <td>61%</td>
+                    <td>39%</td>
+                </tr>
+                <tr>
+                    <th scope="col">Question 2</th>
+                    <td>53%</td>
+                    <td>47%</td>
+                    <td>69%</td>
+                    <td>31%</td>
+                </tr>
+                <tr>
+                    <th scope="col">Question 3</th>
+                    <td>26%</td>
+                    <td>74%</td>
+                    <td>51%</td>
+                    <td>49%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="col">Average</th>
+                    <td>40%</td>
+                    <td>60%</td>
+                    <td>60%</td>
+                    <td>40%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

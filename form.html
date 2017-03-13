@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <style>
+
+            div {
+                width: 45%;
+                margin: auto;
+                padding: 15px 0px 155px 10px;
+                border: 3px solid black;
+                position: relative;
+            }
+
+            .required:before {
+                content:"* ";
+                color:red;
+            }
+
+            .notRequired {
+                position: absolute;
+                left: 3%;
+            }
+
+            input, select, textarea {
+                position: absolute;
+                left: 40%;
+            }
+
+           textarea {
+               width: 55%;
+
+           }
+
+           input[type="submit"] {
+                position: absolute;
+                left: 45%;
+                margin-top: 110px;
+            }
+
+           span {
+               position: absolute;
+               left: 1%;
+           }
+
+           label {
+               position: absolute;
+               left: 1%;
+           }
+
+           .right {
+               position: absolute;
+               left: 45%;
+           }
+
+       </style>
+    </head>
+    <body>
+        <div>
+            <form name="MyForm" action="server.php">
+                <label for="company" class="required">Company:</label>
+                <input type="text" id="company" required="required">
+                <br>
+                <br>
+                <label for="firstName" class="required">First name:</label>
+                <input type="text" id="firstName" required="required">
+                <br>
+                <br>
+                <label for="lastName" class="required">Last name:</label>
+                <input type="text" id="lastName" required="required">
+                <br>
+                <br>
+                <label for="email" class="required">Email Adress:</label>
+                <input type="email" id="email" required="required">
+                <br>
+                <br>
+                <label for="phoneNumber" class="required">Phone:</label>
+                <input type="tel" id="phoneNumber" required="required">
+                <br>
+                <br>
+                <label for="cancelRegistration" class="notRequired">Cancel Registration:</label>
+                <input type="checkbox" id="cancelRegistration" checked="checked">
+                <br>
+                <br>
+                <label for="trainingSession2010" class="required">252 training Session 2010:</label>
+                <select id="trainingSession2010" style="width: 162px;" required="required">
+                    <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Select a date--</option>
+                    <option value="01">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11.January.2017</option>
+                    <option value="02">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.January.2017</option>
+                    <option value="03">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.January.2017</option>
+                    <option value="04">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27.January.2017</option>
+                    <option value="05">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30.January.2017</option>
+                </select>
+                <br>
+                <br>
+                <p class="required">Job Function:</p>
+                <input type="radio" id="CampaignManagement" value="CampaignManagement" required="required"/><label for="CampaignManagement" class="right">Campaign Management</label>
+                <br>
+                <br>
+                <input type="radio" id="CRMAdministration" value="CRMAdministration" required="required"/><label for="CRMAdministration" class="right">CRM Administration</label>
+                <br>
+                <br>
+                <input type="radio" id="EmailDeployment" value="EmailDeployment" required="required"/><label for="EmailDeployment" class="right">Email Deployment</label>
+                <br>
+                <br>
+                <input type="radio" id="Partner" value="Partner" required="required"/><label for="Partner" class="right">Partner</label>
+                <br>
+                <br>
+                <input type="radio" id="Employee" value="Employee" required="required"/><label for="Employee" class="right">Employee</label>
+                <br>
+                <br>
+                <label for="dietaryRequirements" class="notRequired">Dietary Requirements:</label>
+                <input type="text" id="dietaryRequirements">
+                <br>
+                <br>
+                <label for="expectations" class="notRequired">Expectations?:</label>
+                <textarea id="expectations" rows="8" cols="40"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
